@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>MC News</title>
+	<link rel="stylesheet" href="css/frames.css">
+</head>
+<body>
+	<div id="container"></div>
+
+	<div id="banner-switcher">
+		<a href="#" id="banner-toggle">
+			<i class="burger-icon">
+				<span class="top"></span>
+				<span class="mid"></span>
+				<span class="bot"></span>
+			</i>
+		</a>
+		<ul id="size_switcher">
+			<li>
+				<a href="#mob">
+					<img src="images/switcher-mob.svg" alt="">
+					<span class="label">Mobile</span>
+				</a>
+			</li>
+			<li>
+				<a href="#desk" class="active">
+					<img src="images/switcher-desk.svg" alt="">
+					<span class="label">Desktop</span>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="switch-links">
+			<li class="nativehid">
+				<a href="#banner-place-2" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-1.svg" alt=""></i>
+					<span class="label">Native</span>
+				</a>
+			</li>
+			<li class="nativevis">
+				<a href="#banner-place-4" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-1.svg" alt=""></i>
+					<span class="label">Native</span>
+				</a>
+			</li>
+			<li class="mobhid">
+				<a href="#banner_sticky" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-2.svg" alt=""></i>
+					<span class="label">Sticky</span>
+				</a>
+			</li>
+			<li class="mobvis">
+				<a href="#banner_sticky_mobile" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-2.svg" alt=""></i>
+					<span class="label">Sticky</span>
+				</a>
+			</li>
+			<li>
+				<a href="#banner_slider" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-3.svg" alt=""></i>
+					<span class="label">Slider</span>
+				</a>
+			</li>
+			<li class="mobhid">
+				<a href="#jpg_modal" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-4.svg" alt=""></i>
+					<span class="label">Interstitial</span>
+				</a>
+			</li>
+			<li class="mobvis">
+				<a href="#jpg_modal_mob" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-4.svg" alt=""></i>
+					<span class="label">Interstitial</span>
+				</a>
+			</li>
+			<li class="mobvis">
+				<a href="#banner-place-1-mobile" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-5.svg" alt=""></i>
+					<span class="label">Banner</span>
+				</a>
+			</li>
+			<li class="mobhid">
+				<a href="#banner-place-1" class="place-link">
+					<i class="switcher-icon"><img src="images/banner-icon-5.svg" alt=""></i>
+					<span class="label">Banner</span>
+				</a>
+			</li>
+			<li>
+				<a href="#banner-place-3" class="place-link haschild">
+					<i class="switcher-icon"><img src="images/banner-icon-6.svg" alt=""></i>
+					<span class="label">Video</span>
+				</a>
+				<ul class="child">
+					<li class="vidhid">
+						<a href="#banner-place-3" class="place-link">
+							<i class="switcher-icon"><img src="images/banner-icon-5.svg" alt=""></i>
+							<span class="label">Banner</span>
+						</a>
+					</li>
+					<li class="vidvis">
+						<a href="#banner-place-5" class="place-link">
+							<i class="switcher-icon"><img src="images/banner-icon-5.svg" alt=""></i>
+							<span class="label">Banner</span>
+						</a>
+					</li>
+					<li>
+						<a href="#video_modal" class="place-link">
+							<i class="switcher-icon"><img src="images/banner-icon-4.svg" alt=""></i>
+							<span class="label">Interstitial</span>
+						</a>
+					</li>
+					<li>
+						<a href="#banner_slider_video" class="place-link">
+							<i class="switcher-icon"><img src="images/banner-icon-3.svg" alt=""></i>
+							<span class="label">Slider</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="mobhid">
+				<a onclick="show_popup()" href="#">
+					<i class="switcher-icon"><img src="images/banner-icon-7.svg" alt=""></i>
+					<span class="label">Popup</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<iframe id="contents" src="contents.html" frameborder="0" width="100%" height="100%"></iframe>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/frames.js"></script>
+</body>
+</html>
